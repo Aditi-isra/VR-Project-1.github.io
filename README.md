@@ -1,113 +1,149 @@
 
 # Project 1 Report
 ## [Video](https://www.youtube.com/watch?v=4d0j63YGN1s)
-## [The Room](https://andrewim.github.io/Project-1-VR/)
-### Room layout
-The screenshots below show different angles of the room and the various models in the room. The room is a rectangle with a size of 22 by 23. All the models that were used in this room were from [Poly](https://poly.google.com/) (List of models used with author name and link below). The room was first made using [Glitch](https://glitch.com/) then imported to GitHub. There are 5 different lights in the room, 3 are used to show blue fading lights on the objects that can play sounds. 1 light is used to show the glowing of the stars with a glowing white light near the window in the back of the room. The last light is used for lighting the room with an ambient light. The dynamic object in the room is the ceiling fan.
+## [The Room](https://virtual-reality-project-1.glitch.me/)
+
+### Lights and Dynamic Objects
+The screenshots below show different angles of the room and the various models in the room. The room is a rectangle with a size of 22 by 23. All the models that were used in this room are listed in the end with their source links. The project was made using [Glitch](https://glitch.com/) then imported to GitHub. There are 4 ceiling lights with point type light and one light is used for lighting the room with an ambient light. The dynamic object in the room are the two ceiling fans.
 ![alt text](https://github.com/AndrewIm/Project-1-VR/blob/master/Report%20IMG%20and%20Video/VR1.png "VR 1")
 ![alt text](https://github.com/AndrewIm/Project-1-VR/blob/master/Report%20IMG%20and%20Video/VR2.png "VR 2")
 ![alt text](https://github.com/AndrewIm/Project-1-VR/blob/master/Report%20IMG%20and%20Video/VR3.png "VR 3")
+
+### Covid Mode
+The room consists of two different scenes to show before and after covid modes when clicked on a Virus model in the center.When we enter VR the room is in Before Covid mode with all the objects kept neatly at its place. When the red model is clicked the house changes to after Covid mode showing the various changes that took place after covid in the households. Below images show some of the covid before / after changes.
+
 ### Audio
-The screenshots below show the 3 different models in the room that can play sound. The first is the Saturn V Rocket, the second the Gramophone, and the third Piano. Each object has inside it a invisible box inside the model with similar dimension. When clicked on the box plays the audio file that it was assigned to. The only noticeable difference in these 3 models is that the invisible box to trigger the audio for the piano is the size of the keys not the entire piano. Music plays from 2 of the models (Gramophone, Piano) while the last one plays audio of a poem from a movie.
+The screenshots below show the 2 different models in the room that can play sound. The first is the Saturn V Rocket, the second the Gramophone, and the third Piano. Each object has inside it a invisible box inside the model with similar dimension. When clicked on the box plays the audio file that it was assigned to. The only noticeable difference in these 3 models is that the invisible box to trigger the audio for the piano is the size of the keys not the entire piano. 
 ![alt text](https://github.com/AndrewIm/Project-1-VR/blob/master/Report%20IMG%20and%20Video/Audio%201.png "Audio 1")
 ![alt text](https://github.com/AndrewIm/Project-1-VR/blob/master/Report%20IMG%20and%20Video/Audio%202.png "Audio 2")
 ![alt text](https://github.com/AndrewIm/Project-1-VR/blob/master/Report%20IMG%20and%20Video/Audio%203.png "Audio 3")
+
 ### Controllable Object
-The controllable object in the room is a tavern that pops out of the wall when a button is triggered. When the user clicks on the button it triggers an animation event that makes the tavern change position to come out of the wall. If pressed again the tavern goes back into the wall. The tavern is triggered by an invisible box behind the button so that when the user clicks on the button it clicks the invisible box.
+The controllable object in the room is floor lamp kept next to the couch in the living room . The user can toggle the light by clicking on it.
 ![alt text](https://github.com/AndrewIm/Project-1-VR/blob/master/Report%20IMG%20and%20Video/Button.png "Button 1")
-# Models-39 in Total
 
-[Table by Google](https://poly.google.com/view/fdtYBOniyxa)
+# Models-33 
 
-[Couch|wde by Danny Bittman](https://poly.google.com/view/7Q_Ab2HLll1)
+<couch>
+https://poly.google.com/view/7bcBpxNzv6Q
 
-[Lamp by Google](https://poly.google.com/view/aurlA5vCous)
+<center table>
+https://poly.google.com/view/a0sPhY8z7Ti 
 
-[Remote Contorl by Google](https://poly.google.com/view/5pcD_YZujab)
+<carpet>
+https://sketchfab.com/3d-models/floor-carpet-d147288801294fb0a9218795a9e9aae8
 
-[Small Metal Table by Thomas DR](https://poly.google.com/view/3HuEZJbjgOJ)
+<breakfast>
+https://poly.google.com/view/2N4SPXmrqmm
 
-[Desk Lamp by Pookage Hayes](https://poly.google.com/view/0_FDq_UjWHp)
+<Kitchentable>
+https://poly.google.com/view/artB-Ky9rAz
 
-[Laptop by Google](https://poly.google.com/view/csEfSvMgyOw)
+<Aquarium>
+https://poly.google.com/view/3Qta4KlD0tw
 
-[Tablet by Google](https://poly.google.com/view/2LxocCCiDy-)
+<Map>
+https://poly.google.com/view/bU3B6P0ngfi
 
-[Desk by Julien Kleber](https://poly.google.com/view/5kPLN9W15qj)
+<Drums>
+https://poly.google.com/view/fhGcVhYNBW5
 
-[Gramophone by Don Carson](https://poly.google.com/view/9MZ0sCt1REv)
+<BookReadingman>
+https://poly.google.com/view/eHaCAJk_cNQ
 
-[My Neighbor by Don Carson](https://poly.google.com/view/cekm2HcWMwD)
+<Gymset>
+https://poly.google.com/view/5Xu3LrAI9Pe
 
-[Treasure Chest by Louis DeScioli](https://poly.google.com/view/f7SU-dO1FG7)
+<dresser>
+https://poly.google.com/view/exXhc1QaEVM
 
-[3 Ball Billards by Quick Sand](https://poly.google.com/view/1DEXg34OJ83)
+<Fridge>
+https://poly.google.com/view/bwL7Xvmql74
 
-[Vintage Corner Table Danny Bittman](https://poly.google.com/view/7IxmR5JQXyC)
+<GettingReadyman>
+https://poly.google.com/view/f1lfk56w-f6
 
-[Tubbs The Cat by Nikki Morin](https://poly.google.com/view/2iwlJG9K-ym)
+<Barcorner>
+https://poly.google.com/view/0b-elmGL6g-
 
-[Server Rack by Mikael Ganehag Brorsson](https://poly.google.com/view/60s93Adyxvj)
+<Fan>
+https://www.turbosquid.com/3d-models/3d-cartoon-ceiling-fan-1150757
 
-[Little Bookcase by Don Carson](https://poly.google.com/view/74tXfxoDB9b)
+<Sanitizer>
+https://sketchfab.com/3d-models/game-ready-disinfectant-hand-sanitizer-bottle-2be81dcbd5824aa6a5c6f596ca7c9a63
 
-[Saturn V by Gemini Titan](https://poly.google.com/view/cnhEejzpYLG)
+<Mask>
+https://www.cgtrader.com/items/2365245/download-page
 
-[Tavern by Don Carson](https://poly.google.com/view/2twvfQfSlHB)
+<vase>
+https://poly.google.com/view/0zkiY3qaSRP
 
-[Basic Red BUtton by Christopher Burgess](https://poly.google.com/view/4sacC8YcLmI)
+<pizza>
+https://poly.google.com/view/38SXc54Igp3
 
-[Mini Fantasy Tank by MAxwell Planck](https://poly.google.com/view/4XjRDOSpazi)
+<Books>
+https://poly.google.com/view/3ZqFRk2aK65
 
-[That Expensive Chair by Vladimir Ilic](https://poly.google.com/view/5osCtu2pLwv)
+<Red Covid model>
+https://www.cgtrader.com/free-3d-models/science/medical/corona-covid-19-virus-687ace2d-e0a3-4d5b-a595-36b31e621a35
 
-[Printer By Google](https://poly.google.com/view/7NKDv75jVeg)
+<Green Covid model>
+https://sketchfab.com/3d-models/coronavirus-3d-model-4339565b099d472ba657e1e2b3596199
 
-[Telescope by Don Carson](https://poly.google.com/view/3HJCpDzBQEw)
+<Emptychair>
+https://poly.google.com/view/f4dWkHizhSZ
 
-[Window by Justin Randall](https://poly.google.com/view/dwBpM-aSA_t)
+<Fireplace>
+https://poly.google.com/view/fueH4_5W9Ug
 
-[Table and Chairs by David Edwards](https://poly.google.com/view/8YCrudS_CF9)
+<sidetable>
+https://sketchfab.com/3d-models/stylised-table-195c945078684c24bb3de3f069d84118#download
 
-[Kitchen by Google](https://poly.google.com/view/7J_ua1Ho1Gt)
+<Big table>
+https://poly.google.com/view/5qMpo1d61bW
 
-[Toaster by Google](https://poly.google.com/view/edIkWKMV1Wf)
+<lamp>
+https://poly.google.com/view/3fBR37WefHM
 
-[Microwave by Google](https://poly.google.com/view/0YYExMzwX0V)
+<Paintpalette>
+https://poly.google.com/view/94Eii6n3_fI
 
-[Orchid by Google](https://poly.google.com/view/59BuDmuEYIZ)
+<door>
+https://poly.google.com/view/94Eii6n3_fI
 
-[Pot Belly Stove by Don Carson](https://poly.google.com/view/4Zpt6uhxBAC)
+<Cushion>
+https://poly.google.com/view/0AF_8nkslYf
 
-[Piano by Bruno Oliveira](https://poly.google.com/view/5vbJ5vildOq)
+<Television>
+https://free3d.com/3d-model/mi-smart-tv-32-inch-239229.html
 
-[Hi-Fi Stereo by Google](https://poly.google.com/view/3N5cUYDN30g)
+<Relaxedman>
+https://poly.google.com/view/5Lgsn9vrPc0
 
-[Television by Google](https://poly.google.com/view/6Fa29JN3A3F)
+<Emptycomputer table>
+https://poly.google.com/view/a02W3MqEt0P
 
-[Fort by Google](https://poly.google.com/view/b_UDhVGwfY8)
+# Self-made Objects
 
-[Pillow by Google](https://poly.google.com/view/f60emm1Xkas)
+1-Ceiling lights
+2-Storage Rack
+3-Boombox
+4-Window
+5-Center Table
 
-[Camping Stuff by Don Carson](https://poly.google.com/view/3GSiSGRuyfT)
+# Audio-2 in Total
+<Drum sound>
+https://www.myinstants.com/instant/directed-by-robert-b-weide-451/
 
-[Ceiling Fan by Google](https://poly.google.com/view/evjKlG1pgr-)
+<Boom-box music>
+http://dev.dinahmoe.com/p/jingle-bells-mp3-free-download-songspk/punpun
 
-Shelf by Me
+# Images-2 in Total
+<PaintImage>
+https://www.pinterest.com/pin/347621664987734327/
 
-# Audio-3 in Total
-[Blue Moon by Frank Sinatra](https://www.youtube.com/watch?v=6vr0amOKCHo)
+<windowimage>
+https://www.flickr.com/photos/52243088@N00/448409823/
 
-[Sleep Away by Bob Acri](https://www.youtube.com/watch?v=I6PHgtdxFrY)
+# Textures
 
-[Interstellar-Do Not Go Gentle Into That Good Night by Dylan Thomas Read by Sir Michael Caine](https://www.youtube.com/watch?v=cZ04lK4pjGU)
-
-# Images-4 in Total
-
-[Wood Texture](https://design.tutsplus.com/tutorials/quick-tip-create-a-seamless-wood-tile-in-minutes--psd-10043)
-
-[Dark Tile](https://www.pinterest.com/pin/498562621237000626/)
-
-[Stone Tile](http://www.swtexture.com/2013/04/various-ledge-stones-1.html)
-
-[Space](https://scontent-atl3-1.cdninstagram.com/vp/d85f12c5f6b6b589419d12a3c3d0c12f/5B202B10/t51.2885-15/e35/17076358_246165359177562_6697776493365297152_n.jpg?se=7&ig_cache_key=MTQ2MTU4OTQxNjExNTA3MDA3OQ%3D%3D.2)

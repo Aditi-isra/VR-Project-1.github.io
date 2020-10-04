@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Virtual Reality -Project 1</title>
+	<meta name="description" content="Virtual Reality -Project 1">
+	<script src="libs/aframe.min.js"></script>
+	<script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v1.0.4/dist/aframe-extras.min.js"></script>
+	<script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+	<script type="text/javascript">
+
+		function setAfterCovid() {
+			document.getElementById('BeforeCovid').setAttribute('visible', 'false')
+			document.getElementById('AfterCovid').setAttribute('visible', 'true')
+
+		}
+		function setBeforeCovid() {
+			document.getElementById('AfterCovid').setAttribute('visible', 'false')
+			document.getElementById('BeforeCovid').setAttribute('visible', 'true')
+		}
+  </script>
+
+	<script type="text/javascript">
+		function lampClick()
+		{
+			var lamp = document.querySelector("#lampLight");
+
+			if(!lampOn)
+			{
+				lamp.setAttribute('light', 'intensity', '0.6');
+				lampOn = true;
+			}
+			else
+			{
+				lamp.setAttribute('light', 'intensity', '0');
+				lampOn = false;
+			}
+		}
+		
+	</script>
+	
+	<script>
+           // Set up component to handle turning on and off the desk lamp light.
+           AFRAME.registerComponent("lamp-toggle", {
+           	init: function() {
+           		var on = false;
+           		var self = this.el;
+           		self.addEventListener("click", function(evt) {
+           			var newLighting;
+           			if (on) {
+           				on = false;
+           				newLighting = {intensity: "0"};
+           			} else {
+           				on = true;
+           				newLighting = {intensity: "0.6"};
+           			}
+
+           			self.setAttribute("light", newLighting, false);
+           		})
+           	}
+           })
+           
+       </script>
+       <script>
+       	AFRAME.registerComponent('audiohandler', {
+       		init:function() {
+       			let playing = false;
+       			let audio = document.querySelector("#drumsound");
+       			this.el.addEventListener('click', () => {
+       				if(!playing) {
+       					audio.play();
+       				} else {
+       					audio.pause();
+       					audio.currentTime = 0;
+       				}
+       				playing = !playing;
+       			});
+       		}
+       	})   
+       </script>
+       <script>
+       	AFRAME.registerComponent('audiohandler1', {
+       		init:function() {
+       			let playing = false;
+       			let audio = document.querySelector("#music");
+       			this.el.addEventListener('click', () => {
+       				if(!playing) {
+       					audio.play();
+       				} else {
+       					audio.pause();
+       					audio.currentTime = 0;
+       				}
+       				playing = !playing;
+       			});
+       		}
+       	})   
+       </script>
+   </head> 
+   <body>
+   	
+
+   	<a-scene cursor="rayOrigin: mouse">
+
+   		<!--Text Indicators for interactions-->
+   		<a-text color= "black" rotation="0 90 0" value="Click Lamp to toggle lights" position="-8.1 2.5 4.3"></a-text>    
+   		<a-text color= "black" rotation="0 0 0" value="Click Drum to Play/Stop Music" position="-9.390 2.229 -10.500" scale="1.2 1.2 1.2"></a-text>
+   		<a-text color= "black" rotation="0 180 0" value="Click Boombox to Play/Stop music" position="7.512 4.539 5.184" scale="1.5 1.5 1.5"></a-text>
+  
+   		<!-- Sky/Ambient light -->
+   		<a-entity light="type: ambient; color: #BBB"></a-entity>
+   		<a-entity light="type: directional; color: #FFF; intensity: 0.6" position="-0.5 1 1"></a-entity>
+   		
+   		<a-sky color="#ECECEC"></a-sky>
+   		<!-- All assets for this Project -->
+   		<a-assets >
+   			<a-mixin id="light"
+   			geometry="primitive: sphere; radius: 0.2"
+   			material="color: #fcae65; shader: flat"
+   			light="color: #f2f2eb; type:point; intensity: 0.1"></a-mixin>
+   			
+        <a-asset-item id="DogO" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2Fmodel.obj?v=1601836805271"></a-asset-item>
+        <a-asset-item id="DogM" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2Fmaterials.mtl?v=1601836808229"></a-asset-item>
+   			<a-asset-item id="object" src="https://cdn.glitch.com/7ab7d3b7-ddd5-4be2-aca9-8c93ca6ac0c6%2Fmodel.obj?1518580812981"></a-asset-item>
+   			<a-asset-item id="material" src="https://cdn.glitch.com/01ed6aa3-bbbd-4bb8-b730-fc07f6bf22c0%2Fmaterials.mtl?1518503544756"></a-asset-item>
+   			<a-asset-item id="TableO" src="https://cdn.glitch.com/7ab7d3b7-ddd5-4be2-aca9-8c93ca6ac0c6%2FTable.obj?1518504442438"></a-asset-item>
+   			<a-asset-item id="TableM" src="https://cdn.glitch.com/7ab7d3b7-ddd5-4be2-aca9-8c93ca6ac0c6%2FTable.mtl?1518504443405"></a-asset-item>
+   			<a-asset-item id="EmptyCompO" src="https://cdn.glitch.com/6dfdfebf-a049-4e26-9fc2-c77635b04ffc%2Femptycomputer.obj?v=1600948028740"></a-asset-item> 
+   			<a-asset-item id="EmptyCompM" src="https://cdn.glitch.com/6dfdfebf-a049-4e26-9fc2-c77635b04ffc%2Femptycomputer.mtl?v=1600948016541"></a-asset-item> 	
+   			<a-asset-item id="PersonchillingO" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2Fpersonchilling.obj?v=1601798864837"></a-asset-item> 
+   			<a-asset-item id="PersonchillingM" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2Fpersonchilling.mtl?v=1601798859154"></a-asset-item> 
+   			<a-asset-item id="CeilingfanO" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FCartoon_Ceiling_Fan.obj?v=1601797533604"></a-asset-item>  
+   			<a-asset-item id="CeilingfanM" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FCartoon_Ceiling_Fan.mtl?v=1601797526820"></a-asset-item>               
+   			<a-asset-item id="SmarttvM" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FMI%20SMART%20TV.mtl?v=1601797551392"></a-asset-item>         
+   			<a-asset-item id="SmarttvO" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FMI%20SMART%20TV.obj?v=1601797557534"></a-asset-item>                                    
+   			<a-gltf-model id="Carpet" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2Fcarpet?v=1601797575133" > </a-gltf-model>         
+   			<a-asset-item id="SidetableO" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2Fsidetable.obj?v=1601797293586"></a-asset-item> 
+   			<a-asset-item id="SidetableM" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2Fsidetable.mtl?v=1601797282332"></a-asset-item>         
+   			<a-asset-item id="KitchentableO" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FKitchentable.obj?v=1601796254872"></a-asset-item>         
+   			<a-asset-item id="KitchentableM" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FKitchentable.mtl?v=1601796249081"></a-asset-item>         
+   			<a-gltf-model id="CenterTable" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FCentertable?v=1601796270197" ></a-gltf-model>                  
+   			<a-asset-item id="CouchO" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2Fcouch.obj?v=1601427933644"></a-asset-item>
+   			<a-asset-item id="CouchM" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2Fcouch.mtl?v=1601427929061"></a-asset-item>           
+   			<a-gltf-model id="Easel" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FEasel?v=1601796018399" ></a-gltf-model>            
+   			<a-gltf-model id="Fridge" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FFridge.glb?v=1601793865599"></a-gltf-model>            
+   			<a-gltf-model id="WallMap" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FWallMap?v=1601795876349" ></a-gltf-model>         
+   			<a-gltf-model id="Bar" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FBar.glb?v=1601795693705" ></a-gltf-model>         
+   			<a-gltf-model id="Breakfast" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FBreakfast.glb?v=1601795835397" ></a-gltf-model>                  
+   			<audio id="drumsound" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2Fdirected-by-robert-b_voI2Z4T.mp3?v=1601795711424"></audio>
+   			<audio id="music" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FJingle%20Bells.mp3?v=1601846071763"></audio>    
+   			<a-gltf-model id="Gymset" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FGymset.glb?v=1601795735841" > </a-gltf-model>                       
+   			<a-asset-item id="MaskO" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2Fuploads_files_2365245_Mask%2BTR.obj?v=1601443703275"></a-asset-item>         
+   			<a-asset-item id="MaskM" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2Fuploads_files_2365245_Mask%2BTR.mtl?v=1601443698483"></a-asset-item>         
+   			<a-asset-item id="CokecanO" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2Fcan.obj?v=1601442366363"></a-asset-item>         
+   			<a-asset-item id="CokecanM" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2Fcan.mtl?v=1601442359488"></a-asset-item>               
+   			<a-asset-item id="RelaxmanO" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FRelaxMan.obj?v=1601795572282"></a-asset-item>         
+   			<a-asset-item id="RelaxmanM" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FRelaxMan.mtl?v=1601795567439"></a-asset-item>         
+   			<a-asset-item id="GettingReadyO" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FGettingReady.obj?v=1601795597427"></a-asset-item>         
+   			<a-asset-item id="GettingReadyM" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FGettingReady.mtl?v=1601795592584"></a-asset-item>           			
+   			<a-gltf-model id="Curtain" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2Ffrontcurtain.glb?v=1601795248934" > </a-gltf-model> 
+   			<a-gltf-model id="Vase" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2Fvase.glb?v=1601488694659" > </a-gltf-model>                 
+   			<a-gltf-model id="Pizza" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FPizza.glb?v=1601489616709" > </a-gltf-model>                 
+   			<a-gltf-model id="Whitevase" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FWhitevase.glb?v=1601497071401" > </a-gltf-model>                 
+   			<a-asset-item id="FishO" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2Ffish.obj?v=1601795012218"></a-asset-item> 
+   			<a-asset-item id="FishM" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2Ffish.mtl?v=1601794996794"></a-asset-item>
+   			<a-gltf-model id="HandSanitizer" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FHandsanitizer.glb?v=1601443690638" > </a-gltf-model>                 
+   			<a-gltf-model id="RedModel" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FCorona%20%20Covid-19.glb?v=1601587974402" > </a-gltf-model>                 
+   			<a-gltf-model id="GreenModel" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FGreenmodel.glb?v=1601590498595"></a-gltf-model>         
+   			<a-gltf-model id="Books" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FBooks.glb?v=1601594594690"></a-gltf-model>         
+   			<a-gltf-model id="EmptyChair" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FArmchair.glb?v=1601793236306"></a-gltf-model>         
+   			<a-gltf-model id="Fireplace" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FFireplace.glb?v=1601596472634"></a-gltf-model>         
+   			<a-gltf-model id="StylizedTable" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FStylizedTable.glb?v=1601597126837"></a-gltf-model>         
+   			<a-gltf-model id="Lamp" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FLamp.glb?v=1601623247409"></a-gltf-model>            			
+   			<a-gltf-model id="Door" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FDoor.glb?v=1601668964578"></a-gltf-model>              
+   			<img id="Windowimage" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FWindowimage.jpg?v=1601601192609">       
+   			<a-gltf-model  id="PaintPalette" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FPaintpalette.glb?v=1601695924566"></a-gltf-model> 
+   			<a-gltf-model id="Cushion" src="https://cdn.glitch.com/1cb0dbbf-f97c-4a77-9a00-0f924dc82eb7%2FCushion.glb?v=1601790263795" ></a-gltf-model>         
+
+   		</a-assets>
+   		
+   		<!-- What the item is and where it goes -->
+   	
+   		<a-image position="12.399 2.990 -2.749" rotation ="0 90 0" src="#Windowimage" width="1.15" height="1.4"></a-image>
+   		<a-gltf-model position="4.564 2.324 6.360" scale="0.3 0.3 0.3" rotation="0 0 0"  src="#HandSanitizer" ></a-gltf-model>      
+   		<a-gltf-model position="4.754 -0.739 6.349" scale="1 1 1" rotation="0 90 0"  src="#Books" ></a-gltf-model>      
+   		<a-gltf-model position="5.754 -0.739 6.349" scale="1 1 1" rotation="0 90 0"  src="#Books" ></a-gltf-model>      
+   		<a-gltf-model position="3.324 4.059 -7.507" scale="1 1 1" rotation="0 90 0"  src="#Bar" ></a-gltf-model>      
+   		<a-gltf-model position="9.503 1.363 -1.400" scale="0.45 0.45 .45" rotation="0 120 0"  src="#Easel" ></a-gltf-model>
+   		<a-gltf-model position="3.474 3.701 -5.609" scale="0.3 0.3 0.3" rotation="90 0 0"  src="#WallMap" ></a-gltf-model>
+   		<a-obj-model rotation="0 180 0" position="-6 1 -1" scale="3.5 3.5 3.5" width="25" src="#CouchO" mtl="#CouchM"></a-obj-model>
+   		<a-obj-model position="-7.5.1 2.5 5.5" scale="3 3 4" src="#FishO" mtl="#FishM"></a-obj-model>
+   		<a-gltf-model position="-2.746 0.070 -0.757" scale=".1 .2 .15 " rotation="0 90 0"  src="#Carpet" ></a-gltf-model>
+   		<a-obj-model rotation="0 0 0" position="9.305 1.614 5.903" scale="2.4 2.4 2.4" src="#EmptyCompO" mtl="#EmptyCompM"></a-obj-model>
+   		<a-obj-model rotation="0 90 0" position="11.341 1.054 3.697" scale="0.7 .7 .7" src="#SidetableO" mtl="#SidetableM"></a-obj-model>
+   		<a-gltf-model position="6.203 0.091 -2.280" scale=".007 .006 .006" rotation="0 0 0"  src="#Curtain" ></a-gltf-model>
+   		<a-gltf-model position="-8.903 0.091 -2.280" scale=".007 .006 .006" rotation="0 0 0"  src="#Curtain" ></a-gltf-model>
+   		<a-gltf-model rotation="0 -90 0" position="9.890 0.926 -11.470" scale="0.5 0.5 0.5" src="#Fridge"></a-gltf-model>
+   		<a-obj-model rotation="0 -90 0" position="1.020 3.124 -0.780" src="#SmarttvO" mtl="#SmarttvM"></a-obj-model>     
+   		<a-cylinder color="#D3D3D3" position="1.5 4.332 -0.743" height="1.2" radius="0.05"></a-cylinder>
+   		<a-gltf-model position="1.254 0.098 -5.503" scale="0.3 0.3 0.3" rotation="0 0 0"  src="#Fireplace" ></a-gltf-model>      
+   		<a-gltf-model position="-8.146 -0.174 6.166" scale="0.011 0.011 0.011" rotation="0 90 0"  src="#StylizedTable" ></a-gltf-model>      
+   		<a-gltf-model position="-1.491 -0.265 8.765" scale="0.02 0.02 0.02" rotation="0 -160 0"  src="#Door" ></a-gltf-model>   
+   		<a-gltf-model position="9.734 1.597 -1.417" rotation ="0 -45 0" src="#PaintPalette" scale="0.05 0.05 0.05"></a-gltf-model> 
+   		<a-obj-model rotation="0 45 0" position="4.414 0.591 -4.014" scale="1 1 1" src="#DogO" mtl="#DogM"></a-obj-model>     
+
+   		<!--Lamp-->
+   		<a-entity lamp-toggle class="intersectable" position="-6.878 1.480 3.208" light="type: point; intensity: 0; distance: 15">
+   			<a-gltf-model src="#Lamp" scale="0.5 0.3 0.5"></a-gltf-model>
+   		</a-entity>
+
+   		
+   		<!--Covid before/after animation-->
+   		
+   		<!--Before covid scenes-->
+   		
+   		<a-entity id= "BeforeCovid" onclick="setAfterCovid()">
+   			<a-gltf-model position="-6.463 0.239 -0.038" scale="0.03 0.04 0.02" rotation="-10 90 0"  src="#Cushion" ></a-gltf-model>      
+   			<a-gltf-model position="-6.463 0.239 -2.246" scale="0.03 0.04 0.02" rotation="-10 90 0"  src="#Cushion" ></a-gltf-model>     			
+   			<a-obj-model  rotation="0 -90 0" position="-0.267 1.423 -13.358" scale="1.5 1.5 1.5" src="#GettingReadyO" mtl= "#GettingReadyM"></a-obj-model>
+   			<a-gltf-model position="-3.498 1.159 0.675" scale="0.5 0.5 0.5" rotation="0 0 0"  src="#Vase" ></a-gltf-model>      
+   			<a-gltf-model position="4.800 3.822 6.679" scale="0.3 0.3 0.3" rotation="0 0 0"  src="#Whitevase" ></a-gltf-model>     			
+   			<a-gltf-model position="-1.102 3.997 -4.738" scale="0.3 0.3 0.3" rotation="0 0 0"  src="#RedModel" ></a-gltf-model>
+   			<a-text color="black" scale ="1.5 1.5 1.5" value="Click Red for After Covid mode"  position="-2.281 3.237 -4.169" rotation="0 0 0" ></a-text> 
+   			<a-gltf-model position="10.891 -3.088 0.700" scale="1.4 1.4 1.4" rotation="0 180 0"  src="#EmptyChair" ></a-gltf-model>    			
+   			<a-gltf-model position="-1.260 3.997 -14.449" scale="0.3 0.3 0.3" rotation="0 0 0"  src="#RedModel" ></a-gltf-model>
+   			<a-text color="black" scale ="1.5 1.5 1.5" value="Click Red for After Covid mode"  position="-2.281 3.237 -13.604" rotation="0 0 0" ></a-text> 
+   			<a-gltf-model position="11.401 0.044 -7.911" scale="0.007 0.007 0.007" rotation="-90 90 0"  src="#CenterTable" ></a-gltf-model>
+
+   		</a-entity> 
+   		
+   		
+   		<!--After covid scenes-->
+   		<a-entity id= "AfterCovid" visible="false" onclick="setBeforeCovid()"> 
+   			<a-gltf-model rotation="0 0 0" position="0.461 3.997 -14.449" scale="0.7 0.7 0.7" width="25" src="#GreenModel" mtl="#GreenModelM"></a-gltf-model>
+   			<a-text color="black" scale ="1.5 1.5 1.5" value="Click Green for Before Covid mode"  position="-2.281 3.237 -4.169" rotation="0 0 0" ></a-text> 
+   			<a-gltf-model rotation="0 0 0" position="0.461 3.997 -4.738" scale="0.7 .7 .7" width="25" src="#GreenModel" mtl="#GreenModelM"></a-gltf-model>
+   			<a-text color="black" scale ="1.5 1.5 1.5" value="Click Green for Before Covid mode"  position="-2.281 3.237 -4.169" rotation="0 0 0" ></a-text> 
+   			<a-obj-model  rotation="0 210 0" position="-0.267 1.705 -13.792" scale="1 1 1" src="#RelaxmanO" mtl= "#RelaxmanM"></a-obj-model>
+   			<a-gltf-model position="-1.002 0.848 -12.302" scale="0.00002 0.00002 0.00002" rotation="0 180 0"  src="#Gymset" ></a-gltf-model>  
+   			<a-gltf-model position="-3.180 1.314 0.169" scale="0.04 0.04 0.04" rotation="0 180 0"  src="#Pizza" ></a-gltf-model> 
+   			<a-gltf-model position="-3.955 -1.447 -1.457" scale="3 3 3" rotation="0 90 0"  src="#Breakfast" ></a-gltf-model>      
+   			<a-gltf-model position="4.707 3.172 6.702" scale="0.3 0.3 0.3" rotation="0 0 0"  src="#HandSanitizer" ></a-gltf-model>                
+   			<a-gltf-model position="4.162 3.172 6.798" scale="0.3 0.3 0.3" rotation="0 0 0"  src="#HandSanitizer" ></a-gltf-model>      
+   			<a-gltf-model position="4.477 3.172 6.404" scale="0.3 0.3 0.3" rotation="0 0 0"  src="#HandSanitizer" ></a-gltf-model>
+   			<a-obj-model rotation="0 90 0" position="-1.009 -0.176 -0.688" scale="0.1 0.1 0.1" width="25" src="#CokecanO" mtl="#CokecanM"></a-obj-model>
+   			<a-obj-model rotation="0 90 45" position="-2.173 0.351 0.180" scale="0.04 0.04 0.04" width="25" src="#MaskO" mtl="#MaskM"></a-obj-model>
+   			<a-obj-model rotation="0 90 0" position="11.093 1.595 1.654" scale="1 1 1" src="#PersonchillingO" mtl="#PersonchillingM"></a-obj-model>
+   			<a-obj-model rotation="0 90 0" position="11.401 1.320 -8.354" scale="1.5 1.5 1.5" src="#KitchentableO" mtl="#KitchentableM"></a-obj-model>
+   			<a-text color="black" scale ="1.3 1.3 1.3" value="Click Green for Before Covid mode"  position="-2.281 3.237 -13.604" rotation="0 0 0" ></a-text> 
+   			<a-gltf-model position="-3.978 1.070 -0.607" scale="0.03 0.04 0.04" rotation="90 0 0"  src="#Cushion" ></a-gltf-model>      
+   			<a-gltf-model position="-5.246 2.212 -2.117" scale="0.03 0.04 0.04" rotation="90 0 0"  src="#Cushion" ></a-gltf-model>  
+   		</a-entity> 
+   		
+   		<!--Drums animation-->
+   		<a-entity id="Drums" obj-model="mtl:https://cdn.glitch.com/6dfdfebf-a049-4e26-9fc2-c77635b04ffc%2FDrums.mtl?v=1601114444138;obj:https://cdn.glitch.com/6dfdfebf-a049-4e26-9fc2-c77635b04ffc%2FDrums.obj?v=1601114452410" position="-8.119 0.871 -12.603"
+   		scale="1.5 1.5 1.5" rotation="0 190 0"  crossorigin="anonymous">
+   		<a-box audiohandler color="red" height="5.5" width="5.5" depth="5.5" class="intersectable"
+   		scale="0.317 0.317 0.317" material="opacity:0;transparent:true"></a-box>
+   	</a-entity> 
+   	
+                                 	<!--Self-made objects-->
+   	<!--Side Storage Rack-->
+   	
+   	<a-box position ="6.297 1.413 6.562" depth="0.3" height="2.8" width="1" rotation="0 90 0"  color="#361c02"></a-box>
+   	<a-box position ="4 1.413 6.562" depth="0.3" height="2.8" width="1" rotation="0 90 0" color="#361c02" ></a-box>
+   	<a-box position ="5.130 2.821 6.551" depth="0.1" height="2.6" width="1" rotation="90 90 0"  color="#361c02"></a-box>
+   	<a-box position ="5.065 1.989 6.549" depth="0.09" height="2.2" width="1" rotation="90 90 0"  color="#361c02"></a-box>
+   	<a-box position ="5.065 0.789 6.549" depth="0.09" height="2.2" width="1" rotation="90 90 0" color="#361c02" ></a-box>
+   	
+   	<!--CenterTable-->
+   	<a-box position ="-3.185 1.147 -0.701" depth="0.2" height="2.8" width="1.5" rotation="90 0 0"  color="#361c02"></a-box>
+   	<a-box position ="-2.735 0.566 0.224" depth="0.3" height="1" width=".2" rotation="0 90 0" color="#361c02" ></a-box>
+   	<a-box position ="-2.684 0.567 -1.577" depth="0.3" height="1" width=".2" rotation="0 90 0"  color="#361c02"></a-box>
+   	<a-box position ="-3.522 0.632 -1.614" depth="0.3" height="1" width=".2" rotation="0 90 0"  color="#361c02"></a-box>
+   	<a-box position ="-3.522 0.632 0.389" depth="0.3" height="1" width=".2" rotation="0 90 0" color="#361c02" ></a-box>
+   	
+   	<!--Boombox-->
+   	
+   	<a-entity id="#music" crossorigin="anonymous" >                      
+   		<a-box position ="5.618 3.227 6.497" depth=".3" height=".7" width="1.1" color="red" rotation="0 30 0" ></a-box>
+   		<a-box position ="5.618 3.227 6.497" depth=".09" height=".7" width="1.1" color="black" rotation="0 30 0" ></a-box>
+   		<a-sphere color="yellow" position="5.778 3.249 6.276" radius=".2"></a-sphere>
+   		<a-cylinder color="#1207ad" rotation="0 30 0" position="5.391 3.157 6.538" height="0.2" radius="0.2"></a-cylinder>
+   		<a-cylinder color="#1207ad" rotation="0 30 90" position="5.308 3.401 6.524" height="0.3" radius="0.08"></a-cylinder>
+   		<a-box position ="5.600 3.878 6.497" depth=".09" height=".1" width=".93" color="black" rotation="0 30 0"  ></a-box>
+   		<a-box position ="5.953 3.733 6.283" depth=".09" height=".3" width=".1" color="black" rotation="0 30 0"  ></a-box>
+   		<a-box position ="5.235 3.689 6.696" depth=".09" height=".3" width=".1" color="black" rotation="0 30 0"  ></a-box>
+   		<a-box audiohandler1 color="red" height="5.5" width="5.5" depth="5.5" class="intersectable" position="5.619 3.272 6.623"
+   		scale="0.2 0.2 0.2" material="opacity:0;transparent:true" ></a-box>
+   	</a-entity>   
+      
+   	<!--Ceiling Lights-->        	
+   	<!--<a-sphere position = "5.687 4.055 -10.578" radius="0.2" id="light"> </a-sphere>-->
+   	<a-cylinder color="#1d3013" position="-3.845 4.457 -10.488" height="0.5" radius="0.05"></a-cylinder>
+   	<a-cylinder color="#1d3013" position="5.69 4.57 -10.488" height="0.5" radius="0.05"></a-cylinder>
+   	
+   	<a-entity animation="property: rotation; to: 0 0 360; dur: 4000; easing: in-out; loop: true">
+   		<a-entity mixin="light" position="5.681 4.191 -10.512" angle="-60"  ></a-entity>
+   	</a-entity>
+   	<a-entity animation="property: rotation; to: 0 0 360; dur: 4000; easing: in-out; loop: true">
+   		<a-entity mixin="light" position="-3.876 4.191 -10.512" angle="-60" ></a-entity>
+   	</a-entity>
+   	
+   	
+   	<a-cylinder color="#1207ad" rotation="0 0 90" position="-9.076 3.697 -2.905" height="0.7" radius="0.05"></a-cylinder>
+   	<a-cylinder color="#1207ad" rotation="0 0 90" position="-9.060 3.697 2.417" height="0.7" radius="0.05"></a-cylinder>
+   	<a-cylinder color="#1207ad" rotation="0 0 0" position="-8.778 3.841 -2.921" height="0.3" radius="0.05"></a-cylinder>
+   	<a-cylinder color="#1207ad" rotation="0 0 0" position="-8.761 3.899 2.414" height="0.3" radius="0.05"></a-cylinder>
+   	
+   	<a-entity animation="property: rotation; to: 0 0 360; dur: 4000; easing: linear; loop: true">
+   		<a-entity mixin="light" position="-8.753 4.089 -2.867" ></a-entity>
+   	</a-entity>
+   	<a-entity animation="property: rotation; to: 0 0 360; dur: 4000;easing: linear; loop: true">
+   		<a-entity mixin="light" position="-8.753 4.089 2.395" ></a-entity>
+   	</a-entity>
+   	
+   	<!--Window-->
+   	<a-box position ="12.334 3 -3.35" depth="0.1" height="1.5" width=".1" rotation="0 0 0"  color="#453919"></a-box>
+   	<a-box position ="12.334 3 -2.211" depth="0.1" height="1.5" width=".1" rotation="0 0 0"  color="#453919"></a-box>
+   	<a-box position ="12.334 3 -2.773" depth="0.1" height="1.5" width=".1" rotation="0 0 0"  color="#453919"></a-box>
+
+   	<a-box position ="12.334 3.705 -2.777" depth="0.1" height="1.2" width=".1" rotation="0 90 90"  color="#453919"></a-box>
+   	<a-box position ="12.334 2.987 -2.777" depth="0.1" height="1.2" width=".1" rotation="0 90 90"  color="#453919"></a-box>
+   	<a-box position ="12.334 2.287 -2.785" depth="0.1" height="1.2" width=".1" rotation="0 90 90"  color="#453919"></a-box>
+
+   	
+   	<a-obj-model rotation="0 -90 0" position="1.020 3.124 -0.780" src="#SmarttvO" mtl="#SmarttvM"></a-obj-model>
+   	
+   	<!-- Moving animation-->
+
+   	<!--Moving Fan-->
+   	<a-entity rotation="0 0 0" position="-3.249 4.181 0" scale=".02 .02 .02" obj-model="position:-3.249 3.382 0;obj:#CeilingfanO; mtl:#CeilingfanM"  class="intersectable" >
+   		<a-animation attribute="rotation"
+   		dur="3000"
+   		from="0 0 0"
+   		to="0 360 0"
+   		easing="linear"
+   		repeat></a-animation></a-entity>
+   		<a-entity rotation="0 0 0" position="6.249 4.181 0" scale=".02 .02 .02" obj-model="position:6.249 3.382 0;obj:#CeilingfanO; mtl:#CeilingfanM"  class="intersectable" >
+   			<a-animation attribute="rotation"
+   			dur="3000"
+   			from="0 0 0"
+   			to="0 360 0"
+   			easing="linear"
+   			repeat></a-animation></a-entity>
+      
+      
+   			<!-- Dimensions of the Room -->
+   			
+   			<!-- Floor And Ceiling -->
+   			<a-entity id="Floor" position="1.5 0 -4.5" rotation="-90 0 0" geometry="primitive: plane; width: 80; height:53"
+   			material="src:https://cdn.glitch.com/6dfdfebf-a049-4e26-9fc2-c77635b04ffc%2Ftex%20floor1.jpg?v=1600763191850; repeat: 12 6"></a-entity> 
+   			<a-entity id="Ceiling" position="1.5 5 -4.5" rotation="-270 0 0" geometry="primitive: plane; width: 22; height:23"
+   			material="src:https://cdn.glitch.com/6dfdfebf-a049-4e26-9fc2-c77635b04ffc%2Fceiling%201.jpg?v=1600764433188 repeat: 12 12"></a-entity>
+   			<!-- Walls around the Room-->        
+   			<a-entity id="Wall1F" position="1.5 2 -15" rotation="0 0 0" geometry="primitive: plane; width: 22; height:6"
+   			material="src:https://cdn.glitch.com/6dfdfebf-a049-4e26-9fc2-c77635b04ffc%2Fdark-brick-red-colored-painted-wall-texture.jpg?v=1601267985351; repeat: 6 2"></a-entity>    
+   			<a-entity id="Wall2B" position="1.5 2 7" rotation="180 0 0" geometry="primitive: plane; width: 22; height:6"
+   			material="src:https://cdn.glitch.com/6dfdfebf-a049-4e26-9fc2-c77635b04ffc%2Ftex%202.jpg?v=1600762916267; repeat: 6 2"></a-entity>          
+   			<a-entity id="Wall3L" position="-9.4 2 -4" rotation="0 90 0" geometry="primitive: plane; width:22; height:6"
+   			material="src:https://cdn.glitch.com/6dfdfebf-a049-4e26-9fc2-c77635b04ffc%2Ftex%202.jpg?v=1600762916267; repeat: 6 2"></a-entity>
+   			<a-entity id="Wall4R" position="12.4 2 -4" rotation="0 -90 0" geometry="primitive: plane; width: 22; height:6"
+   			material="src:https://cdn.glitch.com/6dfdfebf-a049-4e26-9fc2-c77635b04ffc%2Ftex%202.jpg?v=1600762916267; repeat: 6 2"></a-entity>
+   			<!--Center wall and texture-->
+   			<a-box position ="1.588 2.574 -5.935" depth="0.5" height="5.5" width="8.5" rotation="0 0 0" material="src:https://cdn.glitch.com/6dfdfebf-a049-4e26-9fc2-c77635b04ffc%2Fmarbled_copper_paper_texture_by_enchantedgal_stock_dsjmxb-fullview.jpg?v=1601165315347" ></a-box>
+   			
+   			
+   			<!-- Camera/person moving around -->    
+   			<a-entity position="0 1 7">
+   				<a-camera universal-controls="acceleration: 10">
+   					<a-entity raycaster="far: 120; objects: .intersectable" cursor geometry="primitive: ring; radiusOuter: 0.015;
+   					radiusInner: 0.01; segmentsTheta: 32" material="color: #283644; shader: flat" position="0 0 -0.75"></a-entity>
+   				</a-camera>
+   			</a-entity>
+   			
+   		</a-scene>
+   		
+   		
+   	</body>
+   	</html>

@@ -13,7 +13,8 @@ The screenshots below show different angles of the room and the various models i
 The room consists of two different scenes to show before and after covid modes when clicked on a Virus model in the center.When we enter VR the room is in Before Covid mode with all the objects kept neatly at its place. When the red model is clicked the house changes to after Covid mode showing the various changes that took place after covid in the households. Below images show some of the covid before / after changes.
 
 ### Audio
-The screenshots below show the 2 different models in the room that can play sound. The first is the Saturn V Rocket, the second the Gramophone, and the third Piano. Each object has inside it a invisible box inside the model with similar dimension. When clicked on the box plays the audio file that it was assigned to. The only noticeable difference in these 3 models is that the invisible box to trigger the audio for the piano is the size of the keys not the entire piano. 
+The screenshots below show the 2 different models in the room that can play sound. One of the object are Drums and the other one is the Boombox. Each object has inside it a invisible box inside the model with similar dimension. When clicked on the box plays the sound and when clicked again it stops playing the sound. 
+
 ![alt text](https://github.com/AndrewIm/Project-1-VR/blob/master/Report%20IMG%20and%20Video/Audio%201.png "Audio 1")
 ![alt text](https://github.com/AndrewIm/Project-1-VR/blob/master/Report%20IMG%20and%20Video/Audio%202.png "Audio 2")
 ![alt text](https://github.com/AndrewIm/Project-1-VR/blob/master/Report%20IMG%20and%20Video/Audio%203.png "Audio 3")

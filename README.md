@@ -1,7 +1,7 @@
 
 # Project 1 Report
-## [Video](https://www.youtube.com/watch?v=4d0j63YGN1s)
-## [The Room](https://virtual-reality-project-1.glitch.me/)
+## [YouTube Link](https://www.youtube.com/watch?v=4d0j63YGN1s)
+## [Demo Link](https://virtual-reality-project-1.glitch.me/)
 
 ### Lights and Dynamic Objects
 The screenshots below show different angles of the room and the various models in the room. The room is a rectangle with a size of 22 by 23. All the models that were used in this room are listed in the end with their source links. The project was made using [Glitch](https://glitch.com/) then imported to GitHub. There are 4 ceiling lights with point type light and one light is used for lighting the room with an ambient light. The dynamic object in the room are the two ceiling fans.

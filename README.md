@@ -10,14 +10,16 @@ The screenshots below show different angles of the room and the various models i
 
 
 ### Covid Mode
-The room consists of two different scenes to show before and after covid modes when clicked on a Virus model in the center.When we enter VR the room is in Before Covid mode with all the objects kept neatly at its place. When the red model in the center is clicked the house changes to after Covid mode showing the various changes that took place after covid in the households.The before covid mode can be changed by clicking on the Green model in the center. Below images show some of the covid before / after changes.
+The room consists of two different scenes to show before and after covid modes when clicked on a Virus model in the center.When we enter VR, the room is in "Before Covid" mode with all the objects kept neatly at its place. When the red model in the center is clicked the house changes to after Covid mode showing the various changes that took place after covid in the households.The before covid mode can be seen again by clicking on the Green model in the center. Below images show some of the covid before / after changes.
 
 ![alt text](https://github.com/Aditi-isra/VR-Project-1.github.io/blob/master/Images/Before%20Covid.png "Before Covid")
 ![alt text](https://github.com/Aditi-isra/VR-Project-1.github.io/blob/master/Images/After%20Covid.png "After Covid")
+![alt text](https://github.com/Aditi-isra/VR-Project-1.github.io/blob/master/Images/After%20Covid.png "Before Covid")
+![alt text](https://github.com/Aditi-isra/VR-Project-1.github.io/blob/master/Images/VR-3.png "After Covid")
 
 
 ### Audio
-The screenshots below show the 2 different models in the room that can play sound. One of the object are Drums and the other one is the Boombox. Each object has inside it a invisible box inside the model with similar dimension. When clicked on the box plays the sound and when clicked again it stops playing the sound. 
+The screenshots below show the 2 different models in the room that can play sound. One of the object is Drums and the other one is the Boombox. Each object has a invisible box inside the model with similar dimension. When clicked on the box plays the sound and when clicked again it stops playing the sound. 
 
 ![alt text](https://github.com/Aditi-isra/VR-Project-1.github.io/blob/master/Images/Boombox.png "Audio 1")
 ![alt text](https://github.com/Aditi-isra/VR-Project-1.github.io/blob/master/Images/Drums.png "Audio 2")
@@ -29,104 +31,71 @@ The controllable object in the room is floor lamp kept next to the couch in the 
 
 # Models-33 
 
-1.Couch 
-https://poly.google.com/view/7bcBpxNzv6Q
+1.Couch (https://poly.google.com/view/7bcBpxNzv6Q)
 
-2.Center Table
-https://poly.google.com/view/a0sPhY8z7Ti
+2.Center Table (https://poly.google.com/view/a0sPhY8z7Ti)
 
-3. <carpet>
-https://sketchfab.com/3d-models/floor-carpet-d147288801294fb0a9218795a9e9aae8
+3.Carpet (https://sketchfab.com/3d-models/floor-carpet-d147288801294fb0a9218795a9e9aae8)
 
-4. <breakfast>
-https://poly.google.com/view/2N4SPXmrqmm
+4. Breakfast (https://poly.google.com/view/2N4SPXmrqmm)
 
-5. <Kitchentable>
-https://poly.google.com/view/artB-Ky9rAz
+5. Kitchen Table (https://poly.google.com/view/artB-Ky9rAz)
 
-6. <Aquarium>
-https://poly.google.com/view/3Qta4KlD0tw
+6. Aquarium (https://poly.google.com/view/3Qta4KlD0tw)
 
-7. <Map>
-https://poly.google.com/view/bU3B6P0ngfi
+7. Map (https://poly.google.com/view/bU3B6P0ngfi)
 
-8. <Drums>
-https://poly.google.com/view/fhGcVhYNBW5
+8. Drums (https://poly.google.com/view/fhGcVhYNBW5)
 
-9. <BookReadingman>
-https://poly.google.com/view/eHaCAJk_cNQ
+9. Book Reading man (https://poly.google.com/view/eHaCAJk_cNQ)
 
-10. <Gymset>
-https://poly.google.com/view/5Xu3LrAI9Pe
+10. Gymset (https://poly.google.com/view/5Xu3LrAI9Pe)
 
-11. <dresser>
-https://poly.google.com/view/exXhc1QaEVM
+11. Dresser (https://poly.google.com/view/exXhc1QaEVM)
 
-12. <Fridge>
-https://poly.google.com/view/bwL7Xvmql74
+12. Fridge (https://poly.google.com/view/bwL7Xvmql74)
 
-13. <GettingReadyman>
-https://poly.google.com/view/f1lfk56w-f6
+13. Getting Ready man (https://poly.google.com/view/f1lfk56w-f6)
 
-<Barcorner>
-https://poly.google.com/view/0b-elmGL6g-
+14. Barcorner (https://poly.google.com/view/0b-elmGL6g-)
 
-<Fan>
-https://www.turbosquid.com/3d-models/3d-cartoon-ceiling-fan-1150757
+15. Fan  (https://www.turbosquid.com/3d-models/3d-cartoon-ceiling-fan-1150757)
 
-<Sanitizer>
-https://sketchfab.com/3d-models/game-ready-disinfectant-hand-sanitizer-bottle-2be81dcbd5824aa6a5c6f596ca7c9a63
+16. Sanitizer (https://sketchfab.com/3d-models/game-ready-disinfectant-hand-sanitizer-bottle-2be81dcbd5824aa6a5c6f596ca7c9a63)
 
-<Mask>
-https://www.cgtrader.com/items/2365245/download-page
+17. Mask (https://www.cgtrader.com/items/2365245/download-page)
 
-<vase>
-https://poly.google.com/view/0zkiY3qaSRP
+18. Vase (https://poly.google.com/view/0zkiY3qaSRP)
 
-<pizza>
-https://poly.google.com/view/38SXc54Igp3
+19. Pizza (https://poly.google.com/view/38SXc54Igp3)
 
-<Books>
-https://poly.google.com/view/3ZqFRk2aK65
+20. Books (https://poly.google.com/view/3ZqFRk2aK65)
 
-<Red Covid model>
-https://www.cgtrader.com/free-3d-models/science/medical/corona-covid-19-virus-687ace2d-e0a3-4d5b-a595-36b31e621a35
+21. Red Covid model (https://www.cgtrader.com/free-3d-models/science/medical/corona-covid-19-virus-687ace2d-e0a3-4d5b-a595-36b31e621a35)
 
-<Green Covid model>
-https://sketchfab.com/3d-models/coronavirus-3d-model-4339565b099d472ba657e1e2b3596199
+22. Green Covid model (https://sketchfab.com/3d-models/coronavirus-3d-model-4339565b099d472ba657e1e2b3596199)
 
-<Emptychair>
-https://poly.google.com/view/f4dWkHizhSZ
+23. Emptychair (https://poly.google.com/view/f4dWkHizhSZ)
 
-<Fireplace>
-https://poly.google.com/view/fueH4_5W9Ug
+24. Fireplace (https://poly.google.com/view/fueH4_5W9Ug)
 
-<sidetable>
-https://sketchfab.com/3d-models/stylised-table-195c945078684c24bb3de3f069d84118#download
+25. Sidetable (https://sketchfab.com/3d-models/stylised-table-195c945078684c24bb3de3f069d84118#download)
 
-<Big table>
-https://poly.google.com/view/5qMpo1d61bW
+26. Big table (https://poly.google.com/view/5qMpo1d61bW)
 
-<lamp>
-https://poly.google.com/view/3fBR37WefHM
+27. Lamp (https://poly.google.com/view/3fBR37WefHM)
 
-<Paintpalette>
-https://poly.google.com/view/94Eii6n3_fI
+28. Paintpalette (https://poly.google.com/view/94Eii6n3_fI)
 
-<door>
-https://poly.google.com/view/94Eii6n3_fI
+29. Door (https://poly.google.com/view/94Eii6n3_fI)
 
-<Cushion>
-https://poly.google.com/view/0AF_8nkslYf
+30. Cushion (https://poly.google.com/view/0AF_8nkslYf)
 
-<Television>
-https://free3d.com/3d-model/mi-smart-tv-32-inch-239229.html
+31. Television (https://free3d.com/3d-model/mi-smart-tv-32-inch-239229.html)
 
-<Relaxedman>
-https://poly.google.com/view/5Lgsn9vrPc0
+32. Relaxedman (https://poly.google.com/view/5Lgsn9vrPc0)
 
-<Emptycomputer table>
-https://poly.google.com/view/a02W3MqEt0P
+33. Emptycomputer table (https://poly.google.com/view/a02W3MqEt0P)
 
 # Self-made Objects
 
@@ -137,18 +106,14 @@ https://poly.google.com/view/a02W3MqEt0P
 5-Center Table
 
 # Audio-2 in Total
-<Drum sound>
-https://www.myinstants.com/instant/directed-by-robert-b-weide-451/
+1. Drum sound (https://www.myinstants.com/instant/directed-by-robert-b-weide-451/)
 
-<Boom-box music>
-http://dev.dinahmoe.com/p/jingle-bells-mp3-free-download-songspk/punpun
+2. Boom-box music (http://dev.dinahmoe.com/p/jingle-bells-mp3-free-download-songspk/punpun)
 
 # Images-2 in Total
-<PaintImage>
-https://www.pinterest.com/pin/347621664987734327/
+1. PaintImage (https://www.pinterest.com/pin/347621664987734327/)
 
-<windowimage>
-https://www.flickr.com/photos/52243088@N00/448409823/
+2. Window image (https://www.flickr.com/photos/52243088@N00/448409823/)
 
 # Textures
 

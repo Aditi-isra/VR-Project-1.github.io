@@ -6,7 +6,7 @@
 ### Lights and Dynamic Objects
 The screenshots below show different angles of the room and the various models in the room. The room is a rectangle with a size of 22 by 23. All the models that were used in this room are listed in the end with their source links. The project was made using [Glitch](https://glitch.com/) then imported to GitHub. There are 4 ceiling lights with point type light and one light is used for lighting the room with an ambient light. The dynamic object in the room are the two ceiling fans.
 ![alt text](https://github.com/AndrewIm/Project-1-VR/blob/master/Report%20IMG%20and%20Video/VR1.png "VR 1")
-![alt text](https://github.com/AndrewIm/Project-1-VR/blob/master/Report%20IMG%20and%20Video/VR2.png "VR 2")
+![alt text](Images/After Covid.png")
 ![alt text](https://github.com/AndrewIm/Project-1-VR/blob/master/Report%20IMG%20and%20Video/VR3.png "VR 3")
 
 ### Covid Mode

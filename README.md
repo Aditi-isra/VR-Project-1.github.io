@@ -17,9 +17,8 @@ The room consists of two different scenes to show before and after covid modes w
 ### Audio
 The screenshots below show the 2 different models in the room that can play sound. One of the object are Drums and the other one is the Boombox. Each object has inside it a invisible box inside the model with similar dimension. When clicked on the box plays the sound and when clicked again it stops playing the sound. 
 
-![alt text](https://github.com/AndrewIm/Project-1-VR/blob/master/Report%20IMG%20and%20Video/Audio%201.png "Audio 1")
-![alt text](https://github.com/AndrewIm/Project-1-VR/blob/master/Report%20IMG%20and%20Video/Audio%202.png "Audio 2")
-![alt text](https://github.com/AndrewIm/Project-1-VR/blob/master/Report%20IMG%20and%20Video/Audio%203.png "Audio 3")
+![alt text](https://github.com/Aditi-isra/VR-Project-1.github.io/blob/master/Images/Boombox.png "Audio 1")
+![alt text](https://github.com/Aditi-isra/VR-Project-1.github.io/blob/master/Images/Drums.png "Audio 2")
 
 ### Controllable Object
 The controllable object in the room is floor lamp kept next to the couch in the living room . The user can toggle the light by clicking on it.
@@ -28,10 +27,10 @@ The controllable object in the room is floor lamp kept next to the couch in the 
 # Models-33 
 
 <couch>
-https://poly.google.com/view/7bcBpxNzv6Q
+[https://poly.google.com/view/7bcBpxNzv6Q]
 
 <center table>
-https://poly.google.com/view/a0sPhY8z7Ti 
+[https://poly.google.com/view/a0sPhY8z7Ti ]
 
 <carpet>
 https://sketchfab.com/3d-models/floor-carpet-d147288801294fb0a9218795a9e9aae8

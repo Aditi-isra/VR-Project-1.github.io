@@ -29,9 +29,10 @@ The controllable object in the room is floor lamp kept next to the couch in the 
 
 # Models-33 
 
-1.Couch (https://poly.google.com/view/7bcBpxNzv6Q)
+1.Couch 
+https://poly.google.com/view/7bcBpxNzv6Q
 
-2. <center table>
+2.Center Table
 https://poly.google.com/view/a0sPhY8z7Ti
 
 3. <carpet>

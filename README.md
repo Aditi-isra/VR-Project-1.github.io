@@ -29,43 +29,43 @@ The controllable object in the room is floor lamp kept next to the couch in the 
 
 # Models-33 
 
-<couch>
-https://poly.google.com/view/7bcBpxNzv6Q
+1. <couch>
+(https://poly.google.com/view/7bcBpxNzv6Q)
 
-<center table>
+2. <center table>
 https://poly.google.com/view/a0sPhY8z7Ti
 
-<carpet>
+3. <carpet>
 https://sketchfab.com/3d-models/floor-carpet-d147288801294fb0a9218795a9e9aae8
 
-<breakfast>
+4. <breakfast>
 https://poly.google.com/view/2N4SPXmrqmm
 
-<Kitchentable>
+5. <Kitchentable>
 https://poly.google.com/view/artB-Ky9rAz
 
-<Aquarium>
+6. <Aquarium>
 https://poly.google.com/view/3Qta4KlD0tw
 
-<Map>
+7. <Map>
 https://poly.google.com/view/bU3B6P0ngfi
 
-<Drums>
+8. <Drums>
 https://poly.google.com/view/fhGcVhYNBW5
 
-<BookReadingman>
+9. <BookReadingman>
 https://poly.google.com/view/eHaCAJk_cNQ
 
-<Gymset>
+10. <Gymset>
 https://poly.google.com/view/5Xu3LrAI9Pe
 
-<dresser>
+11. <dresser>
 https://poly.google.com/view/exXhc1QaEVM
 
-<Fridge>
+12. <Fridge>
 https://poly.google.com/view/bwL7Xvmql74
 
-<GettingReadyman>
+13. <GettingReadyman>
 https://poly.google.com/view/f1lfk56w-f6
 
 <Barcorner>

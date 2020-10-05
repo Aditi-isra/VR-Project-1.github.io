@@ -4,12 +4,14 @@
 ## [Demo Link](https://virtual-reality-project-1.glitch.me/)
 
 ### Lights and Dynamic Objects
-The screenshots below show different angles of the room and the various models in the room. The room is a rectangle with a size of 22 by 23. All the models that were used in this room are listed in the end with their source links. The project was made using [Glitch](https://glitch.com/) then imported to GitHub. There are 4 ceiling lights with point type light and one light is used for lighting the room with an ambient light. The dynamic object in the room are the two ceiling fans.
-![alt text](https://github.com/AndrewIm/Project-1-VR/blob/master/Report%20IMG%20and%20Video/VR1.png "VR 1")
+The screenshots below show different angles of the room and the various models in the room. The room is a rectangle with a size of 22 by 23. All the models that were used in this room are listed in the end with their source links. The project was made using [Glitch](https://glitch.com/) then imported to GitHub. There are 4 ceiling lights with point type light and other lights used for lighting the room with an ambient and directional type. The dynamic object in the room are the two ceiling fans.
+![alt text](https://github.com/Aditi-isra/VR-Project-1.github.io/blob/master/Images/VR-6.png "VR 1")
+![alt text](https://github.com/Aditi-isra/VR-Project-1.github.io/blob/master/Images/VR-7.png "VR 1")
 
 
 ### Covid Mode
-The room consists of two different scenes to show before and after covid modes when clicked on a Virus model in the center.When we enter VR the room is in Before Covid mode with all the objects kept neatly at its place. When the red model is clicked the house changes to after Covid mode showing the various changes that took place after covid in the households. Below images show some of the covid before / after changes.
+The room consists of two different scenes to show before and after covid modes when clicked on a Virus model in the center.When we enter VR the room is in Before Covid mode with all the objects kept neatly at its place. When the red model in the center is clicked the house changes to after Covid mode showing the various changes that took place after covid in the households.The before covid mode can be changed by clicking on the Green model in the center. Below images show some of the covid before / after changes.
+
 ![alt text](https://github.com/Aditi-isra/VR-Project-1.github.io/blob/master/Images/Before%20Covid.png "Before Covid")
 ![alt text](https://github.com/Aditi-isra/VR-Project-1.github.io/blob/master/Images/After%20Covid.png "After Covid")
 
@@ -22,15 +24,16 @@ The screenshots below show the 2 different models in the room that can play soun
 
 ### Controllable Object
 The controllable object in the room is floor lamp kept next to the couch in the living room . The user can toggle the light by clicking on it.
-![alt text](https://github.com/AndrewIm/Project-1-VR/blob/master/Report%20IMG%20and%20Video/Button.png "Button 1")
+
+![alt text](https://github.com/Aditi-isra/VR-Project-1.github.io/blob/master/Images/VR-9.png "Button 1")
 
 # Models-33 
 
 <couch>
-[https://poly.google.com/view/7bcBpxNzv6Q]
+https://poly.google.com/view/7bcBpxNzv6Q
 
 <center table>
-[https://poly.google.com/view/a0sPhY8z7Ti ]
+https://poly.google.com/view/a0sPhY8z7Ti
 
 <carpet>
 https://sketchfab.com/3d-models/floor-carpet-d147288801294fb0a9218795a9e9aae8

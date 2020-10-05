@@ -31,13 +31,13 @@ The controllable object in the room is floor lamp kept next to the couch in the 
 
 # Models-33 
 
-1.Couch (https://poly.google.com/view/7bcBpxNzv6Q)
+ 1.Couch (https://poly.google.com/view/7bcBpxNzv6Q)
 
-2.Center Table (https://poly.google.com/view/a0sPhY8z7Ti)
+ 2.Center Table (https://poly.google.com/view/a0sPhY8z7Ti)
+ 
+ 3.Carpet (https://sketchfab.com/3d-models/floor-carpet-d147288801294fb0a9218795a9e9aae8)
 
-3.Carpet (https://sketchfab.com/3d-models/floor-carpet-d147288801294fb0a9218795a9e9aae8)
-
-4. Breakfast (https://poly.google.com/view/2N4SPXmrqmm)
+ 4. Breakfast (https://poly.google.com/view/2N4SPXmrqmm)
 
 5. Kitchen Table (https://poly.google.com/view/artB-Ky9rAz)
 
@@ -99,11 +99,11 @@ The controllable object in the room is floor lamp kept next to the couch in the 
 
 # Self-made Objects
 
-1-Ceiling lights
-2-Storage Rack
-3-Boombox
-4-Window
-5-Center Table
+1. Ceiling lights
+2. Storage Rack
+3. Boombox
+4. Window
+5. Center Table
 
 # Audio-2 in Total
 1. Drum sound (https://www.myinstants.com/instant/directed-by-robert-b-weide-451/)

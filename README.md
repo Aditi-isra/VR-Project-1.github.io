@@ -131,4 +131,8 @@ The controllable object in the room is floor lamp kept next to the couch in the 
 (youworkforthem.com/graphic/E4040/parquet-floor-textures)
 
 5. Side Walls
-()
+(https://www.pinterest.com/pin/120330621272775519/)
+
+# Sample Model Used 
+
+3D model of the TTU Computer Science VR showroom - (https://idatavisualizationlab.github.io/CS5331-VirtualReality-Fall2020/#)

@@ -1,16 +1,18 @@
 
 # Project 1 Report
-## [YouTube Link](https://www.youtube.com/watch?v=4d0j63YGN1s)
+## [YouTube Link](https://youtu.be/kFrh1Y8B-ss)
 ## [Demo Link](https://virtual-reality-project-1.glitch.me/)
 
 ### Lights and Dynamic Objects
 The screenshots below show different angles of the room and the various models in the room. The room is a rectangle with a size of 22 by 23. All the models that were used in this room are listed in the end with their source links. The project was made using [Glitch](https://glitch.com/) then imported to GitHub. There are 4 ceiling lights with point type light and one light is used for lighting the room with an ambient light. The dynamic object in the room are the two ceiling fans.
 ![alt text](https://github.com/AndrewIm/Project-1-VR/blob/master/Report%20IMG%20and%20Video/VR1.png "VR 1")
-![alt text](https://github.com/Aditi-isra/VR-Project-1.github.io/blob/master/Images/After%20Covid.png "VR 1")
-![alt text](https://github.com/AndrewIm/Project-1-VR/blob/master/Report%20IMG%20and%20Video/VR3.png "VR 3")
+
 
 ### Covid Mode
 The room consists of two different scenes to show before and after covid modes when clicked on a Virus model in the center.When we enter VR the room is in Before Covid mode with all the objects kept neatly at its place. When the red model is clicked the house changes to after Covid mode showing the various changes that took place after covid in the households. Below images show some of the covid before / after changes.
+![alt text](https://github.com/Aditi-isra/VR-Project-1.github.io/blob/master/Images/Before%20Covid.png "Before Covid")
+![alt text](https://github.com/Aditi-isra/VR-Project-1.github.io/blob/master/Images/After%20Covid.png "After Covid")
+
 
 ### Audio
 The screenshots below show the 2 different models in the room that can play sound. One of the object are Drums and the other one is the Boombox. Each object has inside it a invisible box inside the model with similar dimension. When clicked on the box plays the sound and when clicked again it stops playing the sound. 

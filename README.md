@@ -106,14 +106,29 @@ The controllable object in the room is floor lamp kept next to the couch in the 
 5. Center Table
 
 # Audio-2 in Total
+
 1. Drum sound (https://www.myinstants.com/instant/directed-by-robert-b-weide-451/)
 
 2. Boom-box music (http://dev.dinahmoe.com/p/jingle-bells-mp3-free-download-songspk/punpun)
 
 # Images-2 in Total
+
 1. PaintImage (https://www.pinterest.com/pin/347621664987734327/)
 
 2. Window image (https://www.flickr.com/photos/52243088@N00/448409823/)
 
 # Textures
 
+1. Center Wall (https://i.pinimg.com/originals/75/a7/0e/75a70e898a00cf210e7c54c2a0585a9b.jpg)
+
+2. Ceiling 
+(https://st2.depositphotos.com/1155346/6431/i/950/depositphotos_64318793-stock-photo-white-background-marble-wall-texture.jpg)
+
+3. Backside Wall
+(https://www.photos-public-domain.com/wp-content/uploads/2011/11/dark-brick-red-colored-painted-wall-texture.jpg)
+
+4. Flooring
+(youworkforthem.com/graphic/E4040/parquet-floor-textures)
+
+5. Side Walls
+()
